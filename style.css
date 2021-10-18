@@ -1,0 +1,278 @@
+/* sign in page */
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* menu bar */
+.navbar {
+  background: linear-gradient(60deg, #1da1f2, #e1306c, #f56040, #8fb2b9);
+}
+
+/* profile*/
+.profile {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 3.6rem;
+  margin: 2rem;
+
+  float: left;
+}
+
+.profile-heading {
+  height: 14rem;
+}
+
+.profilename {
+  background-color: #e1306c;
+  display: inline-block;
+  width: 30%;
+  margin-top: 2rem;
+  position: relative;
+  right: 1.5rem;
+}
+
+.icon {
+  height: 2.3rem;
+  width: 2.3rem;
+}
+
+.btnedit {
+  width: fit-content;
+  font-family: "Times New Roman", Times, serif;
+  background: linear-gradient(60deg, #1da1f2, #e1306c, #f56040, #8fb2b9);
+  background-image: -webkit-linear-gradient(
+    top,
+    60deg,
+    #1da1f2,
+    #e1306c,
+    #f56040,
+    #8fb2b9
+  );
+  background-image: -moz-linear-gradient(
+    top,
+    60deg,
+    #1da1f2,
+    #e1306c,
+    #f56040,
+    #8fb2b9
+  );
+  background-image: -ms-linear-gradient(
+    top,
+    60deg,
+    #1da1f2,
+    #e1306c,
+    #f56040,
+    #8fb2b9
+  );
+  background-image: -o-linear-gradient(
+    top,
+    60deg,
+    #1da1f2,
+    #e1306c,
+    #f56040,
+    #8fb2b9
+  );
+  background-image: linear-gradient(
+    to bottom,
+    60deg,
+    #1da1f2,
+    #e1306c,
+    #f56040,
+    #8fb2b9
+  );
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+
+  text-decoration: none;
+  position: relative;
+  left: -33rem;
+  top: 3rem;
+}
+.btnhire {
+  width: fit-content;
+  font-family: "Times New Roman", Times, serif;
+  background: linear-gradient(60deg, #1da1f2, #e1306c, #f56040, #8fb2b9);
+  background-image: -webkit-linear-gradient(
+    top,
+    60deg,
+    #1da1f2,
+    #e1306c,
+    #f56040,
+    #8fb2b9
+  );
+  background-image: -moz-linear-gradient(
+    top,
+    60deg,
+    #1da1f2,
+    #e1306c,
+    #f56040,
+    #8fb2b9
+  );
+  background-image: -ms-linear-gradient(
+    top,
+    60deg,
+    #1da1f2,
+    #e1306c,
+    #f56040,
+    #8fb2b9
+  );
+  background-image: -o-linear-gradient(
+    top,
+    60deg,
+    #1da1f2,
+    #e1306c,
+    #f56040,
+    #8fb2b9
+  );
+  background-image: linear-gradient(
+    to bottom,
+    60deg,
+    #1da1f2,
+    #e1306c,
+    #f56040,
+    #8fb2b9
+  );
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+
+  text-decoration: none;
+  position: relative;
+  left: -37.5rem;
+  top: 6rem;
+}
+
+hr {
+  background-color: black;
+  height: 1rem;
+}
+
+/* sidebars */
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.b-example-divider {
+  flex-shrink: 0;
+
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.bi {
+  vertical-align: -0.125em;
+  pointer-events: none;
+  fill: currentColor;
+}
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+.nav-flush .nav-link {
+  border-radius: 0;
+}
+
+.b-example-divider {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  background-color: #e1306c;
+  margin-top: 5rem;
+}
+
+.btn {
+  background-color: #eee;
+}
+
+.btn:hover {
+  background: linear-gradient(60deg, #1da1f2, #e1306c, #f56040, #8fb2b9);
+}
+
+.overview {
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.nav-pills {
+  margin-left: 1rem;
+}
+
+.card {
+  display: inline-block;
+  margin-top: 5rem;
+}
+
+.card-img-top {
+  width: 6rem;
+  height: 6rem;
+}
+
+/* trial */
+#piechart {
+  position: absolute;
+  left: 2rem;
+  top: 4rem;
+}
+
+#barchart {
+  position: absolute;
+  left: 40rem;
+  top: 4rem;
+}
+
+#linechart {
+  position: absolute;
+  left: 2rem;
+  top: 40rem;
+}
