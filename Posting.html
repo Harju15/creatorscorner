@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png.png" />
+    <link rel="shortcut icon" type="image/png" href="img/paint.png" />
   </head>
   <body>
     <script
@@ -24,7 +24,7 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Creators Corner</a>
+        <a class="navbar-brand" href="index1.html">Creators Corner</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -39,7 +39,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
+              <a class="nav-link active" aria-current="page" href="index1.html"
                 >Home</a
               >
             </li>
@@ -75,6 +75,9 @@
                 </li>
                 <li><a class="dropdown-item" href="tiktok.html">Tik Tok</a></li>
               </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Logout</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -237,9 +240,31 @@
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="twitter.html" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
+    </div>
+    <div class="modal-body" hidden>
+      <h5>Popover in a modal</h5>
+      <p>
+        This
+        <a
+          href="#"
+          role="button"
+          class="btn btn-secondary popover-test"
+          title="Popover title"
+          data-bs-content="Popover body content is set in this attribute."
+          >button</a
+        >
+        triggers a popover on click.
+      </p>
+      <hr />
+      <h5>Tooltips in a modal</h5>
+      <p>
+        <a href="#" class="tooltip-test" title="Tooltip">This link</a> and
+        <a href="#" class="tooltip-test" title="Tooltip">that link</a> have
+        tooltips on hover.
+      </p>
     </div>
   </body>
 </html>

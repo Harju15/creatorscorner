@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png.png" />
+    <link rel="shortcut icon" type="image/png" href="img/paint.png" />
   </head>
   
     <script
@@ -24,7 +24,7 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Creators Corner</a>
+        <a class="navbar-brand" href="index1.html">Creators Corner</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -39,7 +39,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
+              <a class="nav-link active" aria-current="page" href="index1.html"
                 >Home</a
               >
             </li>
@@ -75,6 +75,9 @@
                 </li>
                 <li><a class="dropdown-item" href="tiktok.html">Tik Tok</a></li>
               </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Logout</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -203,78 +206,193 @@
         </li>
       </ul>
     </div>
-    <!-- comments -->
+    <!-- forum -->
     <div class="top-bar">
       <h1>
-        the forum
+          My Forum
       </h1>
-    </div>
-    <div class="main">
+  </div>
+  <div class="main">
       <ol>
-
       </ol>
-
-    </div>
-    <script src="data.js"></script>
-    console.log(thread);
-    var container = document.queryselector('ol');
-    for (let thread of threads) {
-      var html = `
-      <li class="row">
-        <a href="/thread.html?${thread.id}">
-       <h4 class="bottom">
-        ${thread.title}
-       </h4> 
-       <div class="bottom">
-         <p class="timestamp">
-           ${new date(thread.date).toLocaleString()}
-         </p>
-         <p class="comment-count">
-           ${thread.comments.length} comments
-         </p>
-       </div>
-      </a>
-
-      </li>
-      `
-      container.insertAdjacentHTML('beforeend', html);
-    }
-
+  </div>
+  <script src="script.js"></script>
+  <script>
+      console.log(threads);
+      var container = document.querySelector('ol');
+      for (let thread of threads) {
+          var html = `
+          <li class="row">
+              <a href="/thread.html?${thread.id}">
+                  <h4 class="title">
+                      ${thread.title}
+                  </h4>
+                  <div class="bottom">
+                      <p class="timestamp">
+                          ${new Date(thread.date).toLocaleString()}
+                      </p>
+                      <p class="comment-count">
+                          ${thread.comments.length} comments
+                      </p>
+                  </div>
+              </a>
+          </li>
+          `
+          container.insertAdjacentHTML('beforeend', html);
+      }
   </script>
   <style>
+      body {
+          margin: 10px 60px;
+      }
+      a {
+          text-decoration: none;
+          color: black;
+      }
+      h1, h4, ol {
+          margin: 0;
+      }
+      p {
+          margin: 5px 0;
+      }
+      .top-bar {
+          background-color: skyblue;
+          padding: 0 40px;
+      }
+      .main {
+          background-color: #F6F6EF;
+          padding: 10px 15px;
+      }
+      .row {
+          padding: 5px 0;
+      }
+      .bottom {
+          display: flex;
+          color: grey;
+          font-size: 12px;
+      }
+      .timestamp {
+          padding-right: 10px;
+      }
+  </style>
+  <!-- coments 2 -->
+  <div class="main">
+    <div class="header">
+    </div>
+    <textarea></textarea>
+    <button>add comment</button>
+    <div class="comments">
+    </div>
+</div>
+<script src="script.js"></script>
+<script>
+    var id = window.location.search.slice(1);
+    var thread = threads.find(t => t.id == id);
+    var header = document.querySelector('.header');
+    var headerHtml = `
+        <h4 class="title">
+            ${thread.title}
+        </h4>
+        <div class="bottom">
+            <p class="timestamp">
+                ${new Date(thread.date).toLocaleString()}
+            </p>
+            <p class="comment-count">
+                ${thread.comments.length} comments
+            </p>
+        </div>
+    `
+    header.insertAdjacentHTML('beforeend', headerHtml)
+
+    function addComment(comment) {
+        var commentHtml = `
+            <div class="comment">
+                <div class="top-comment">
+                    <p class="user">
+                        ${comment.author}
+                    </p>
+                    <p class="comment-ts">
+                        ${new Date(comment.date).toLocaleString()}
+                    </p>
+                </div>
+                <div class="comment-content">
+                    ${comment.content}
+                </div>
+            </div>
+        `
+        comments.insertAdjacentHTML('beforeend', commentHtml);
+    }
+
+    var comments = document.querySelector('.comments');
+    for (let comment of thread.comments) {
+        addComment(comment);
+    }
+
+    var btn = document.querySelector('button');
+    btn.addEventListener('click', function() {
+        var txt = document.querySelector('textarea');
+        var comment = {
+            content: txt.value,
+            date: Date.now(),
+            author: 'Aaron'
+        }
+        addComment(comment);
+        txt.value = '';
+        thread.comments.push(comment);
+        localStorage.setItem('threads', JSON.stringify(threads));
+    })
+</script>
+<style>
     body {
-      margin: 10px 60px;
+        margin: 10px 60px;
     }
     a {
-      text-decoration: none;
-      color: black;
+        text-decoration: none;
+        color: black;
     }
-    h1,h4, ol {
-      margin: 0;
+    h1, h4, ol {
+        margin: 0;
     }
     p {
-      margin: 5px 0;
+        margin: 5px 0;
+    }
+    textarea {
+        width: 80%;
+        height: 80px;
+    }
+    button {
+        display: block;
+        margin: 10px 0;
     }
     .top-bar {
-      background-color: skyblue;;
-      padding: 0 40px;
+        background-color: skyblue;
+        padding: 0 40px;
     }
     .main {
-      background-color: skyblue;;
-      padding: 0 40px;
+        background-color: #F6F6EF;
+        padding: 10px 40px;
+    }
+    .comments {
+        margin: 40px 0;
+    }
+    .comment {
+        margin: 10px 0;
     }
     .row {
-      padding: 5px 0;
+        padding: 5px 0;
     }
-    .bottom {
-      display: flex;
-      color: grey;
-      font-size: 12px;
+    .bottom, .top-comment {
+        display: flex;
+        color: grey;
+        font-size: 12px;
     }
     .timestamp {
-      padding-right: 10px;
+        padding-right: 10px;
     }
-  </style>
-    
+    .comment-ts {
+        padding-left: 10px;
+    }
+</style>
+  
   </body>
 </html>

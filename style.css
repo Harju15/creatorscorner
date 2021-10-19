@@ -233,6 +233,8 @@ main {
 
 .btn {
   background-color: #eee;
+  color: black;
+  border-color: black;
 }
 
 .btn:hover {
@@ -275,4 +277,25 @@ main {
   position: absolute;
   left: 2rem;
   top: 40rem;
+}
+
+.main {
+  width: 50%;
+  position: relative;
+  left: 20rem;
+  bottom: 30rem;
+}
+
+.top-bar {
+  width: 50%;
+  position: relative;
+  left: 20rem;
+  bottom: 30rem;
+}
+.mainthread {
+  width: 50%;
+}
+
+.top-barthread {
+  width: 50%;
 }

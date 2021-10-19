@@ -1,37 +1,48 @@
 var defaultThreads = [
   {
     id: 1,
-    title: "thread 1",
-    author: "aaron",
+    title: "Thread 1",
+    author: "Aaron",
     date: Date.now(),
-    content: "thread content",
+    content: "Thread content",
     comments: [
       {
-        author: "jack",
+        author: "Jack",
         date: Date.now(),
-        content: "hey there",
+        content: "Hey there",
       },
       {
-        author: "arthur",
+        author: "Arthur",
         date: Date.now(),
-        content: "hey to you too",
+        content: "Hey to you too",
       },
     ],
   },
   {
     id: 2,
-    title: "thread 2",
-    arthur: "aaron",
+    title: "Thread 2",
+    author: "Aaron",
     date: Date.now(),
-    content: "thread content 2",
-    comments: [{ author: "jack", date: Date.now(), content: "hey there" }],
+    content: "Thread content 2",
+    comments: [
+      {
+        author: "Jack",
+        date: Date.now(),
+        content: "Hey there",
+      },
+      {
+        author: "Arthur",
+        date: Date.now(),
+        content: "Hey to you too",
+      },
+    ],
   },
 ];
 
 var threads = defaultThreads;
-if (localStorage && localStorage.getitem("thread")) {
-  threads = Json.parse(localSorage.getItem("threads"));
+if (localStorage && localStorage.getItem("threads")) {
+  threads = JSON.parse(localStorage.getItem("threads"));
 } else {
   threads = defaultThreads;
-  localStorage.setitem("threads", JSON.stringify(defaultThreads));
+  localStorage.setItem("threads", JSON.stringify(defaultThreads));
 }

@@ -1,0 +1,25 @@
+/* your styles go here */
+#regidter {
+  background-color: grey;
+  border-color: black;
+}
+
+.btn {
+  background-color: #eee;
+  color: black;
+  border-color: black;
+}
+
+.btn:hover {
+  background: linear-gradient(60deg, #1da1f2, #e1306c, #f56040, #8fb2b9);
+}
+
+.btn2 {
+  background-color: #eee;
+  color: black;
+  border-color: black;
+}
+
+.btn2:hover {
+  background: linear-gradient(60deg, #1da1f2, #e1306c, #f56040, #8fb2b9);
+}
