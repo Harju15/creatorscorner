@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Profile</title>
+    <title>CMS-New Post</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="all,follow" />
@@ -13,12 +13,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&amp;display=swap"
       rel="stylesheet"
     />
+    <!-- Quill Themes-->
+    <link rel="stylesheet" href="register-page/quill.snow.css" />
+    <!-- VanillaJs Datepicker CSS-->
+    <link rel="stylesheet" href="register-page/datepicker-bs4.min.css" />
     <!-- Prism Syntax Highlighting-->
-    <link
-      rel="stylesheet"
-      href="vendor/prismjs/plugins/toolbar/prism-toolbar.css"
-    />
-    <link rel="stylesheet" href="vendor/prismjs/themes/prism-okaidia.css" />
+    <link rel="stylesheet" href="charts/prism-toolbar.css" />
+    <link rel="stylesheet" href="charts/prism-okaidia.css" />
     <!-- The Main Theme stylesheet (Contains also Bootstrap CSS)-->
     <link
       rel="stylesheet"
@@ -38,7 +39,7 @@
           ><i class="fas fa-align-left"></i></a
         ><a
           class="navbar-brand fw-bold text-uppercase text-base"
-          href="index1.html"
+          href="index.html"
           ><span class="d-none d-brand-partial">Creators </span
           ><span class="d-none d-sm-inline">Corner</span></a
         >
@@ -82,7 +83,7 @@
               ><a class="dropdown-item py-1" href="index1.html">
                 <img
                   class="avatar avatar-xs p-1 me-2"
-                  src="img/avatar-10.jpg"
+                  src="img/avatar-1.jpg"
                   alt="Frank Williams"
                 /><span>Frank Williams</span></a
               ><a class="dropdown-item py-1" href="index1.html">
@@ -116,7 +117,9 @@
               aria-expanded="false"
             >
               <svg class="svg-icon svg-icon-md svg-icon-heavy">
-                <use xlink:href="orion-svg-sprite.svg#sales-up-1"></use></svg
+                <use
+                  xlink:href="icons/orion-svg-sprite.svg#sales-up-1"
+                ></use></svg
               ><span class="notification-badge bg-green"></span
             ></a>
             <div
@@ -183,7 +186,7 @@
             >
               <svg class="svg-icon svg-icon-md svg-icon-heavy">
                 <use
-                  xlink:href="orion-svg-sprite.svg#paper-plane-1"
+                  xlink:href="icons/orion-svg-sprite.svg#paper-plane-1"
                 ></use></svg
               ><span
                 class="notification-badge notification-badge-number bg-primary"
@@ -200,7 +203,7 @@
               <a class="dropdown-item d-flex align-items-center p-3" href="#">
                 <img
                   class="avatar avatar-sm p-1 me-2"
-                  src="img/avatar-10.jpg"
+                  src="img/avatar-0.jpg"
                   alt="Jason Doe"
                 />
                 <div class="pt-1">
@@ -210,7 +213,7 @@
               ><a class="dropdown-item d-flex align-items-center p-3" href="#">
                 <img
                   class="avatar avatar-sm p-1 me-2"
-                  src="img/avatar-10.jpg"
+                  src="img/avatar-1.jpg"
                   alt="Frank Williams"
                 />
                 <div class="pt-1">
@@ -244,7 +247,7 @@
               data-bs-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-              ><img class="avatar p-1" src="img/profile1.png" alt="Jason Doe"
+              ><img class="avatar p-1" src="img/avatar-6.jpg" alt="Jason Doe"
             /></a>
             <div
               class="dropdown-menu dropdown-menu-end dropdown-menu-animated"
@@ -258,7 +261,7 @@
               <a class="dropdown-item" href="#">Settings</a
               ><a class="dropdown-item" href="#">Activity log </a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="index.html">Logout</a>
+              <a class="dropdown-item" href="login.html">Logout</a>
             </div>
           </li>
         </ul>
@@ -269,7 +272,7 @@
         <h6 class="sidebar-heading">Main</h6>
         <ul class="list-unstyled">
           <li class="sidebar-list-item">
-            <a class="sidebar-link text-muted" href="twitter.html">
+            <a class="sidebar-link text-muted" href="index.html">
               <svg class="svg-icon svg-icon-md me-3">
                 <use
                   xlink:href="orion-svg-sprite.svg#real-estate-1"
@@ -413,7 +416,7 @@
               ><span class="sidebar-link-title">Pages </span></a
             >
             <ul
-              class="sidebar-menu list-unstyled collapse show"
+              class="sidebar-menu list-unstyled collapse"
               id="pagesDropdown"
             >
             <li class="sidebar-list-item">
@@ -462,10 +465,12 @@
                 >
               </li>
               
+              
+              
               <li class="sidebar-list-item">
                 <a
                   class="sidebar-link text-muted"
-                  href="post-list.html"
+                  href="pages-knowledge-base-topic.html"
                   >Forum - Topics</a
                 >
               </li>
@@ -598,374 +603,442 @@
           </div>
           <!-- Page Header-->
           <div class="page-header">
-            <h1 class="page-heading">Profile</h1>
+            <h1 class="page-heading">Add new post</h1>
           </div>
           <section>
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="card card-profile mb-4">
-                  <div
-                    class="card-header"
-                    style="background-image: url(img/cherry.jpg)"
-                  ></div>
-                  <div class="card-body text-center">
-                    <img
-                      class="card-profile-img"
-                      src="img/profile1.png"
-                      alt="Cecilia Clark"
-                    />
-                    <h3 class="mb-3">Cecilia Clark</h3>
-                    <p class="mb-4">
-                      Lorem ipsum dolor sit amet, consectetur 
-                    </p>
-                    <button class="btn btn-outline-dark btn-sm">
-                      <span class="fab fa-twitter"></span> Follow
-                    </button>
-                    <button class="btn btn-outline-dark btn-sm">
-                      <span class="hire me"></span> Hire Me
-                    </button>
-                    <button class="btn btn-outline-dark btn-sm">
-                      <span class="fab fa-instagram"></span> Follow
-                    </button>
-                  </div>
-                </div>
-                <div class="card mb-4">
+            <div class="row mb-5">
+              <div class="col-lg-8 col-xxl-9 mb-4 mb-lg-0">
+                <div class="card">
                   <div class="card-body">
-                    <div class="d-flex align-items-center">
-                      <div class="flex-shrink-0">
-                        <img
-                          class="avatar avatar-lg p-1"
-                          src="img/profile1.png"
-                          alt="Cecilia Clark"
-                        />
-                      </div>
-                      <div class="flex-grow-1 ps-3">
-                        <h4>Cecilia Clark</h4>
-                        <p class="text-muted mb-0">Coder</p>
-                        <ul class="social-links list-inline mb-0 mt-2">
-                          <li class="list-inline-item">
-                            <a
-                              href="javascript:void(0)"
-                              data-bs-toggle="tooltip"
-                              data-placement="top"
-                              title="Nathan's Facebook"
-                              ><i class="fab fa-facebook"></i
-                            ></a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a
-                              href="javascript:void(0)"
-                              data-bs-toggle="tooltip"
-                              data-placement="top"
-                              title="@nathan_andrews"
-                              ><i class="fab fa-twitter"></i
-                            ></a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a
-                              href="javascript:void(0)"
-                              data-bs-toggle="tooltip"
-                              data-placement="top"
-                              title="+420777555987"
-                              ><i class="fa fa-phone"></i
-                            ></a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a
-                              href="javascript:void(0)"
-                              data-bs-toggle="tooltip"
-                              data-placement="top"
-                              title="@nathan"
-                              ><i class="fab fa-skype"></i
-                            ></a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <form class="card mb-4">
-                  <div class="card-header">
-                    <h4 class="card-heading">My Profile</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="row mb-3">
-                      <div class="col-auto d-flex align-items-center">
-                        <img
-                          class="avatar avatar-lg p-1"
-                          src="img/profile1.png"
-                          alt="Avatar"
-                        />
-                      </div>
-                      <div class="col">
-                        <label class="form-label">Name</label>
-                        <input class="form-control" placeholder="Your name" />
-                      </div>
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Bio</label>
-                      <textarea class="form-control" rows="8">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea
-                      >
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Email</label>
-                      <input
-                        class="form-control"
-                        placeholder="you@domain.com"
-                      />
-                    </div>
-                    <label class="form-label">Password</label>
+                    <label class="form-label" for="postTitle">Title</label>
                     <input
-                      class="form-control"
-                      type="password"
-                      value="password"
+                      class="form-control mb-4"
+                      id="postTitle"
+                      type="text"
                     />
+                    <button class="btn btn-outline-primary mb-4">
+                      Add Media
+                    </button>
+                    <div id="editorWithToolbar">
+                      <div id="toolbar-container">
+                        <span class="ql-formats">
+                          <select class="ql-font"></select>
+                          <select class="ql-size"></select></span
+                        ><span class="ql-formats">
+                          <button class="ql-bold"></button>
+                          <button class="ql-italic"></button>
+                          <button class="ql-underline"></button>
+                          <button class="ql-strike"></button></span
+                        ><span class="ql-formats">
+                          <select class="ql-color"></select>
+                          <select class="ql-background"></select></span
+                        ><span class="ql-formats">
+                          <button class="ql-script" value="sub"></button>
+                          <button
+                            class="ql-script"
+                            value="super"
+                          ></button></span
+                        ><span class="ql-formats">
+                          <button class="ql-header" value="1"></button>
+                          <button class="ql-header" value="2"></button>
+                          <button class="ql-blockquote"></button>
+                          <button class="ql-code-block"></button></span
+                        ><span class="ql-formats">
+                          <button class="ql-list" value="ordered"></button>
+                          <button class="ql-list" value="bullet"></button>
+                          <button class="ql-indent" value="-1"></button>
+                          <button class="ql-indent" value="+1"></button></span
+                        ><span class="ql-formats">
+                          <button class="ql-direction" value="rtl"></button>
+                          <select class="ql-align"></select></span
+                        ><span class="ql-formats">
+                          <button class="ql-link"></button></span
+                        ><span class="ql-formats">
+                          <button class="ql-clean"></button
+                        ></span>
+                      </div>
+                      <div
+                        class="bg-white"
+                        id="editor-container"
+                        style="
+                          min-height: 300px;
+                          max-height: 1000px;
+                          overflow-y: auto;
+                        "
+                      >
+                        <h2>Minas Tirith</h2>
+                        <p><br /></p>
+                        <p>
+                          Pippin looked out from the shelter of Gandalf"s cloak.
+                          He wondered if he was awake or still sleeping, still
+                          in the swift-moving dream in which he had been wrapped
+                          so long since the great ride began. The dark world was
+                          rushing by and the wind sang loudly in his ears. He
+                          could see nothing but the wheeling stars, and away to
+                          his right vast shadows against the sky where the
+                          mountains of the South marched past. Sleepily he tried
+                          to reckon the times and stages of their journey, but
+                          his memory was drowsy and uncertain.
+                        </p>
+                        <p><br /></p>
+                        <p>
+                          There had been the first ride at terrible speed
+                          without a halt, and then in the dawn he had seen a
+                          pale gleam of gold, and they had come to the silent
+                          town and the great empty house on the hill. And hardly
+                          had they reached its shelter when the winged shadow
+                          had passed over once again, and men wilted with fear.
+                          But Gandalf had spoken soft words to him, and he had
+                          slept in a corner, tired but uneasy, dimly aware of
+                          comings and goings and of men talking and Gandalf
+                          giving orders. And then again riding, riding in the
+                          night. This was the second, no, the third night since
+                          he had looked in the Stone. And with that hideous
+                          memory he woke fully, and shivered, and the noise of
+                          the wind became filled with menacing voices.
+                        </p>
+                        <p><br /></p>
+                        <p>
+                          A light kindled in the sky, a blaze of yellow fire
+                          behind dark barriers Pippin cowered back, afraid for a
+                          moment, wondering into what dreadful country Gandalf
+                          was bearing him. He rubbed his eyes, and then he saw
+                          that it was the moon rising above the eastern shadows,
+                          now almost at the full. So the night was not yet old
+                          and for hours the dark journey would go on. He stirred
+                          and spoke.
+                        </p>
+                        <p><br /></p>
+                        <p>"Where are we, Gandalf?" he asked.</p>
+                        <p><br /></p>
+                        <p>
+                          "In the realm of Gondor," the wizard answered. "The
+                          land of Anórien is still passing by."
+                        </p>
+                        <p><br /></p>
+                        <p>
+                          There was a silence again for a while. Then, "What is
+                          that?" cried Pippin suddenly, clutching at Gandalf"s
+                          cloak. "Look! Fire, red fire! Are there dragons in
+                          this land? Look, there is another!"
+                        </p>
+                        <p><br /></p>
+                        <p>
+                          For answer Gandalf cried aloud to his horse. "On,
+                          Shadowfax! We must hasten. Time is short. See! The
+                          beacons of Gondor are alight, calling for aid. War is
+                          kindled. See, there is the fire on Amon Dîn, and flame
+                          on Eilenach; and there they go speeding west: Nardol,
+                          Erelas, Min-Rimmon, Calenhad, and the Halifirien on
+                          the borders of Rohan."
+                        </p>
+                        <p><br /></p>
+                        <p>
+                          But Shadowfax paused in his stride, slowing to a walk,
+                          and then he lifted up his head and neighed. And out of
+                          the darkness the answering neigh of other horses came;
+                          and presently the thudding of hoofs was heard, and
+                          three riders swept up and passed like flying ghosts in
+                          the moon and vanished into the West. Then Shadowfax
+                          gathered himself together and sprang away, and the
+                          night flowed over him like a roaring wind.
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="card-footer text-end">
-                    <button class="btn btn-primary">Save</button>
-                  </div>
-                </form>
+                </div>
               </div>
-              <div class="col-lg-8">
-                <div class="card overflow-hidden mb-4">
-                  <div class="card-header">
-                    <div class="input-group">
-                      <input
-                        class="form-control"
-                        type="text"
-                        placeholder="Message"
-                      />
-                      <button class="btn btn-outline-secondary" type="button">
-                        <i class="fa fa-paper-plane"></i>
+              <div class="col-lg-4 col-xxl-3">
+                <div class="card card-sm shadow-sm mb-4">
+                  <div class="card-header py-4">
+                    <h4 class="card-heading">Publish</h4>
+                  </div>
+                  <div class="card-body text-gray-700">
+                    <div class="d-flex mb-4 justify-content-between">
+                      <button class="btn btn-sm btn-outline-secondary">
+                        Save Draft
+                      </button>
+                      <button class="btn btn-sm btn-outline-secondary">
+                        Preview
                       </button>
                     </div>
-                  </div>
-                  <div class="list-group rounded-0">
-                    <div
-                      class="
-                        list-group-item
-                        border-start-0 border-end-0
-                        py-5
-                        border-top-0
-                      "
-                    >
-                      <div class="d-flex">
-                        <div class="flex-shrink-0">
-                          <img
-                            class="avatar avatar-lg p-1"
-                            src="img/profile1.png"
-                            alt="Cecilia Clark"
-                          />
-                        </div>
-                        <div class="flex-grow-1 ps-3">
-                          <small class="float-right">10 mins ago</small>
-                          <h5 class="fw-bold">Cecilia Clark</h5>
-                          <div class="text-muted text-sm">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                          </div>
-                          <div class="d-flex mt-4">
-                            <div class="flex-shrink-0">
-                              <img
-                                class="avatar avatar-md p-1"
-                                src="img/avatar-3.jpg"
-                                alt="Serenity Mitchelle"
-                              />
-                            </div>
-                            <div class="flex-grow-1 ps-3 text-sm text-muted">
-                              <strong class="text-dark"
-                                >Serenity Mitchelle: </strong
-                              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </div>
-                          </div>
-                          <div class="d-flex mt-4">
-                            <div class="flex-shrink-0">
-                              <img
-                                class="avatar avatar-md p-1"
-                                src="img/avatar-10.jpg"
-                                alt="Tony O'Brian"
-                              />
-                            </div>
-                            <div class="flex-grow-1 ps-3 text-sm text-muted">
-                              <strong class="text-dark">Tony O'Brian: </strong
-                              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="list-group-item border-start-0 border-end-0 py-5"
-                    >
-                      <div class="d-flex">
-                        <div class="flex-shrink-0">
-                          <img
-                            class="avatar avatar-lg p-1"
-                            src="img/profile1.png"
-                            alt="Cecilia Clark"
-                          />
-                        </div>
-                        <div class="flex-grow-1 ps-3">
-                          <small class="float-right">12 mins ago</small>
-                          <h5 class="fw-bold">Cecilia Clark</h5>
-                          <div class="text-muted text-sm">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="list-group-item border-start-0 border-end-0 py-5"
-                    >
-                      <div class="d-flex">
-                        <div class="flex-shrink-0">
-                          <img
-                            class="avatar avatar-lg p-1"
-                            src="img/profile1.png"
-                            alt="Cecilia Clark"
-                          />
-                        </div>
-                        <div class="flex-grow-1 ps-3">
-                          <small class="float-right">34 mins ago</small>
-                          <h5 class="fw-bold">Cecilia Clark</h5>
-                          <div class="text-muted text-sm">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                          </div>
-                          <div class="d-flex mt-4">
-                            <div class="flex-shrink-0">
-                              <img
-                                class="avatar avatar-md p-1"
-                                src="img/avatar-6.jpg"
-                                alt="Javier Gregory"
-                              />
-                            </div>
-                            <div class="flex-grow-1 ps-3 text-sm text-muted">
-                              <strong class="text-dark">Javier Gregory: </strong
-                              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <form class="card mb-4">
-                  <div class="card-header">
-                    <h4 class="card-heading">Edit Profile</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-5">
-                        <div class="mb-4">
-                          <label class="form-label">Company</label>
-                          <input
-                            class="form-control"
-                            type="text"
-                            placeholder="Company"
-                            value="Nathan &amp; Nathan"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-3">
-                        <div class="mb-4">
-                          <label class="form-label">Username</label>
-                          <input
-                            class="form-control"
-                            type="text"
-                            placeholder="Username"
-                            value="nathan"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4">
-                        <div class="mb-4">
-                          <label class="form-label">Email address</label>
-                          <input
-                            class="form-control"
-                            type="email"
-                            placeholder="Email"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-6">
-                        <div class="mb-4">
-                          <label class="form-label">First Name</label>
-                          <input
-                            class="form-control"
-                            type="text"
-                            placeholder="First name"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-6">
-                        <div class="mb-4">
-                          <label class="form-label">Last Name</label>
-                          <input
-                            class="form-control"
-                            type="text"
-                            placeholder="Last Name"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="mb-4">
-                          <label class="form-label">Address</label>
-                          <input
-                            class="form-control"
-                            type="text"
-                            placeholder="Home Address"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4">
-                        <div class="mb-4">
-                          <label class="form-label">City</label>
-                          <input
-                            class="form-control"
-                            type="text"
-                            placeholder="City"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-3">
-                        <div class="mb-4">
-                          <label class="form-label">ZIP</label>
-                          <input
-                            class="form-control"
-                            type="number"
-                            placeholder="ZIP"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-5">
-                        <div class="mb-4">
-                          <label class="form-label">Country</label>
-                          <select class="form-control custom-select">
-                            <option value="">UK</option>
-                            <option value="">US</option>
+                    <hr class="bg-gray-500" />
+                    <div class="mb-3">
+                      Status: <strong>Draft </strong
+                      ><a
+                        class="ms-2 text-sm"
+                        data-bs-toggle="collapse"
+                        href="#collapseStatus"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="collapseStatus"
+                        >Edit</a
+                      >
+                      <div class="collapse" id="collapseStatus">
+                        <div class="py-2">
+                          <select
+                            class="form-select form-select-sm"
+                            aria-label="Default select example"
+                          >
+                            <option>Draft</option>
+                            <option>Pending Review</option>
                           </select>
                         </div>
                       </div>
-                      <div class="col-md-12">
-                        <div class="mb-0">
-                          <label class="form-label">About Me</label>
-                          <textarea
-                            class="form-control"
-                            rows="5"
-                            placeholder="Here can be your description"
-                          >
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea
-                          >
+                    </div>
+                    <div class="mb-3">
+                      Visibility: <strong>Public </strong
+                      ><a
+                        class="ms-2 text-sm"
+                        data-bs-toggle="collapse"
+                        href="#collapseVisibility"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="collapseVisibility"
+                        >Edit</a
+                      >
+                      <div class="collapse" id="collapseVisibility">
+                        <div class="py-2">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="visibility"
+                              id="visibility1"
+                            />
+                            <label class="form-check-label" for="visibility1"
+                              >Public</label
+                            >
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="visibility"
+                              id="visibility2"
+                            />
+                            <label class="form-check-label" for="visibility2"
+                              >Password protected</label
+                            >
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="visibility"
+                              id="visibility3"
+                            />
+                            <label class="form-check-label" for="visibility3"
+                              >Private</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      Publish <strong>immediately </strong
+                      ><a
+                        class="ms-2 text-sm"
+                        data-bs-toggle="collapse"
+                        href="#collapsePublish"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="collapsePublish"
+                        >Edit</a
+                      >
+                      <div class="collapse" id="collapsePublish">
+                        <div class="py-3">
+                          <div class="row g-2">
+                            <div class="col-lg-6">
+                              <input
+                                class="form-control form-control-sm"
+                                id="datePublished"
+                                value="10/20/2017"
+                              />
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="d-flex align-items-center text-sm">
+                                <span class="me-1">at</span>
+                                <input
+                                  class="
+                                    form-control form-control-sm
+                                    text-center
+                                  "
+                                  id="hoursPublished"
+                                  type="text"
+                                  value="8"
+                                /><span class="mx-1">:</span>
+                                <input
+                                  class="
+                                    form-control form-control-sm
+                                    text-center
+                                  "
+                                  id="minutesPublished"
+                                  type="text"
+                                  value="00"
+                                />
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="card-footer text-end">
-                    <button class="btn btn-primary" type="submit">
-                      Update Profile
-                    </button>
+                    <button class="btn btn-primary">Publish</button>
                   </div>
-                </form>
+                </div>
+                <div class="card shadow-sm mb-4">
+                  <div class="card-header py-4">
+                    <h4 class="card-heading">Format</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="format"
+                        id="format0"
+                        checked
+                      />
+                      <label class="form-check-label" for="format0"
+                        >Standard</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="format"
+                        id="format1"
+                      />
+                      <label class="form-check-label" for="format1"
+                        >Aside</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="format"
+                        id="format2"
+                      />
+                      <label class="form-check-label" for="format2"
+                        >Image</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="format"
+                        id="format3"
+                      />
+                      <label class="form-check-label" for="format3"
+                        >Video</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="format"
+                        id="format4"
+                      />
+                      <label class="form-check-label" for="format4"
+                        >Quote</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="format"
+                        id="format5"
+                      />
+                      <label class="form-check-label" for="format5">Link</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="card shadow-sm mb-4">
+                  <div class="card-header py-4">
+                    <h4 class="card-heading">Categories</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="mb-4">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          name="category"
+                          id="category0"
+                        />
+                        <label class="form-check-label" for="category0"
+                          >Gear</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          name="category"
+                          id="category1"
+                        />
+                        <label class="form-check-label" for="category1"
+                          >Stories</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          name="category"
+                          id="category2"
+                        />
+                        <label class="form-check-label" for="category2"
+                          >Tips &amp; Tricks</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          name="category"
+                          id="category3"
+                        />
+                        <label class="form-check-label" for="category3"
+                          >Trips</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          name="category"
+                          id="category4"
+                        />
+                        <label class="form-check-label" for="category4"
+                          >Uncategorized</label
+                        >
+                      </div>
+                    </div>
+                    <a class="btn-link" href="#">+ Add New Category</a>
+                  </div>
+                </div>
+                <div class="card shadow-sm mb-4">
+                  <div class="card-header py-4">
+                    <h4 class="card-heading">Tags</h4>
+                  </div>
+                  <div class="card-body">
+                    <input
+                      class="form-control"
+                      id="tags"
+                      type="text"
+                      value="Tag 1, Tag 2"
+                      placeholder="Enter something"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -976,7 +1049,7 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-6 text-center text-md-start fw-bold">
-                <p class="mb-2 mb-md-0 fw-bold">Creators Corner; 2021</p>
+                <p class="mb-2 mb-md-0 fw-bold">Your company &copy; 2021</p>
               </div>
               <div class="col-md-6 text-center text-md-end text-gray-400">
                 <p class="mb-0">Version 1.1.0</p>
@@ -989,13 +1062,21 @@
     <!-- JavaScript files-->
     <script src="profile/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <!-- Choices.js-->
+    <script src="profile/choices.min.js"></script>
+    <!-- VanillaJs DatePicker-->
+    <script src="profile/datepicker-full.min.js"></script>
+    <!-- Quill-->
+    <script src="profile/quill.min.js"></script>
+    <!-- Add New Post JS-->
+    <script src="profile/cms-post-new.js"></script>
     <!-- Main Theme JS File-->
     <script src="profile/theme.js"></script>
     <!-- Prism for syntax highlighting-->
-    <script src="vendor/prismjs/prism.js"></script>
-    <script src="vendor/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
-    <script src="vendor/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
-    <script src="vendor/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <script src="profile/prism.js"></script>
+    <script src="profile/prism-normalize-whitespace.min.js"></script>
+    <script src="profile/prism-toolbar.min.js"></script>
+    <script src="profile/prism-copy-to-clipboard.min.js"></script>
     <script type="text/javascript">
       // Optional
       Prism.plugins.NormalizeWhitespace.setDefaults({

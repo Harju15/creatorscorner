@@ -23,3 +23,9 @@
 .btn2:hover {
   background: linear-gradient(60deg, #1da1f2, #e1306c, #f56040, #8fb2b9);
 }
+
+.socials {
+  display: inline-block;
+  margin: 0 7.5rem 0 0;
+  margin-left: 8.5rem;
+}

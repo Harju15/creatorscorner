@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Profile</title>
+    <title>Twitter Charts</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="all,follow" />
@@ -14,17 +14,10 @@
       rel="stylesheet"
     />
     <!-- Prism Syntax Highlighting-->
-    <link
-      rel="stylesheet"
-      href="vendor/prismjs/plugins/toolbar/prism-toolbar.css"
-    />
-    <link rel="stylesheet" href="vendor/prismjs/themes/prism-okaidia.css" />
+    <link rel="stylesheet" href="charts/prism-toolbar.css" />
+    <link rel="stylesheet" href="charts/prism-okaidia.css" />
     <!-- The Main Theme stylesheet (Contains also Bootstrap CSS)-->
-    <link
-      rel="stylesheet"
-      href="register-page/style.default.css"
-      id="theme-stylesheet"
-    />
+    <link rel="stylesheet" href="register-page/style.default.css" id="theme-stylesheet" />
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="register-page/custom.css" />
     <!-- Favicon-->
@@ -38,7 +31,7 @@
           ><i class="fas fa-align-left"></i></a
         ><a
           class="navbar-brand fw-bold text-uppercase text-base"
-          href="index1.html"
+          href="index.html"
           ><span class="d-none d-brand-partial">Creators </span
           ><span class="d-none d-sm-inline">Corner</span></a
         >
@@ -82,7 +75,7 @@
               ><a class="dropdown-item py-1" href="index1.html">
                 <img
                   class="avatar avatar-xs p-1 me-2"
-                  src="img/avatar-10.jpg"
+                  src="img/avatar-1.jpg"
                   alt="Frank Williams"
                 /><span>Frank Williams</span></a
               ><a class="dropdown-item py-1" href="index1.html">
@@ -116,7 +109,9 @@
               aria-expanded="false"
             >
               <svg class="svg-icon svg-icon-md svg-icon-heavy">
-                <use xlink:href="orion-svg-sprite.svg#sales-up-1"></use></svg
+                <use
+                  xlink:href="icons/orion-svg-sprite.svg#sales-up-1"
+                ></use></svg
               ><span class="notification-badge bg-green"></span
             ></a>
             <div
@@ -183,7 +178,7 @@
             >
               <svg class="svg-icon svg-icon-md svg-icon-heavy">
                 <use
-                  xlink:href="orion-svg-sprite.svg#paper-plane-1"
+                  xlink:href="icons/orion-svg-sprite.svg#paper-plane-1"
                 ></use></svg
               ><span
                 class="notification-badge notification-badge-number bg-primary"
@@ -200,7 +195,7 @@
               <a class="dropdown-item d-flex align-items-center p-3" href="#">
                 <img
                   class="avatar avatar-sm p-1 me-2"
-                  src="img/avatar-10.jpg"
+                  src="img/avatar-0.jpg"
                   alt="Jason Doe"
                 />
                 <div class="pt-1">
@@ -210,7 +205,7 @@
               ><a class="dropdown-item d-flex align-items-center p-3" href="#">
                 <img
                   class="avatar avatar-sm p-1 me-2"
-                  src="img/avatar-10.jpg"
+                  src="img/avatar-1.jpg"
                   alt="Frank Williams"
                 />
                 <div class="pt-1">
@@ -244,7 +239,7 @@
               data-bs-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-              ><img class="avatar p-1" src="img/profile1.png" alt="Jason Doe"
+              ><img class="avatar p-1" src="img/avatar-6.jpg" alt="Jason Doe"
             /></a>
             <div
               class="dropdown-menu dropdown-menu-end dropdown-menu-animated"
@@ -258,7 +253,7 @@
               <a class="dropdown-item" href="#">Settings</a
               ><a class="dropdown-item" href="#">Activity log </a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="index.html">Logout</a>
+              <a class="dropdown-item" href="login.html">Logout</a>
             </div>
           </li>
         </ul>
@@ -269,7 +264,7 @@
         <h6 class="sidebar-heading">Main</h6>
         <ul class="list-unstyled">
           <li class="sidebar-list-item">
-            <a class="sidebar-link text-muted" href="twitter.html">
+            <a class="sidebar-link text-muted" href="index.html">
               <svg class="svg-icon svg-icon-md me-3">
                 <use
                   xlink:href="orion-svg-sprite.svg#real-estate-1"
@@ -413,7 +408,7 @@
               ><span class="sidebar-link-title">Pages </span></a
             >
             <ul
-              class="sidebar-menu list-unstyled collapse show"
+              class="sidebar-menu list-unstyled collapse"
               id="pagesDropdown"
             >
             <li class="sidebar-list-item">
@@ -462,10 +457,12 @@
                 >
               </li>
               
+              
+              
               <li class="sidebar-list-item">
                 <a
                   class="sidebar-link text-muted"
-                  href="post-list.html"
+                  href="pages-knowledge-base-topic.html"
                   >Forum - Topics</a
                 >
               </li>
@@ -526,6 +523,7 @@
                   </li>
                 </ul>
               </li>
+              
               <li class="sidebar-list-item">
                 <a
                   class="sidebar-link text-muted"
@@ -598,374 +596,338 @@
           </div>
           <!-- Page Header-->
           <div class="page-header">
-            <h1 class="page-heading">Profile</h1>
+            <h1 class="page-heading">Twitter Charts</h1>
           </div>
           <section>
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="card card-profile mb-4">
-                  <div
-                    class="card-header"
-                    style="background-image: url(img/cherry.jpg)"
-                  ></div>
-                  <div class="card-body text-center">
-                    <img
-                      class="card-profile-img"
-                      src="img/profile1.png"
-                      alt="Cecilia Clark"
-                    />
-                    <h3 class="mb-3">Cecilia Clark</h3>
-                    <p class="mb-4">
-                      Lorem ipsum dolor sit amet, consectetur 
+            <div class="row mb-4">
+              <div class="col-lg-8 mb-4 mb-lg-0">
+                <div class="card">
+                  <div class="card-header">
+                    <h4 class="card-heading">Line chart Example</h4>
+                  </div>
+                  <div class="card-body">
+                    <p class="text-gray-500">
+                      useful chart
+                      <a href="https://www.chartjs.org/">for socials</a> - a nice wave chart used for charting
                     </p>
-                    <button class="btn btn-outline-dark btn-sm">
-                      <span class="fab fa-twitter"></span> Follow
-                    </button>
-                    <button class="btn btn-outline-dark btn-sm">
-                      <span class="hire me"></span> Hire Me
-                    </button>
-                    <button class="btn btn-outline-dark btn-sm">
-                      <span class="fab fa-instagram"></span> Follow
-                    </button>
+                    <p class="show-code-sample text-sm">
+                      <a data-bs-toggle="collapse" href="#codeSample1"
+                        >wave chart</a
+                      >
+                    </p>
+                    <div class="collapse" id="codeSample1">
+                      <pre
+                        class="code-sample"
+                      ><code class="language-js">const lineChartCustom1 = new Chart(document.getElementById(&quot;lineChartCustom1&quot;), {
+        type: &quot;line&quot;,
+        options: {
+            tooltips: {
+                mode: &quot;index&quot;,
+                intersect: false,
+            },
+            legend: { display: false },
+            scales: {
+                xAxes: [
+                    {
+                        display: true,
+                    },
+                ],
+                yAxes: [
+                    {
+                        display: true,
+                    },
+                ],
+            },
+        },
+        data: {
+            labels: [&quot;January&quot;, &quot;February&quot;, &quot;March&quot;, &quot;April&quot;, &quot;May&quot;, &quot;June&quot;, &quot;July&quot;],
+            datasets: [
+                {
+                    label: &quot;Data Set One&quot;,
+                    fill: true,
+                    lineTension: 0.3,
+                    backgroundColor: window.gradients.whiteBlue,
+                    borderColor: window.gradients.whiteBlue,
+                    borderCapStyle: &quot;butt&quot;,
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: &quot;miter&quot;,
+                    borderWidth: 1,
+                    pointBorderColor: window.gradients.whiteBlue,
+                    pointBackgroundColor: &quot;#fff&quot;,
+                    pointBorderWidth: 1,
+                    pointHoverRadius: 5,
+                    pointHoverBackgroundColor: &quot;#fff&quot;,
+                    pointHoverBorderColor: window.colors.primary,
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 1,
+                    pointHitRadius: 15,
+                    data: [30, 50, 40, 61, 42, 35, 40],
+                    spanGaps: false,
+                },
+                {
+                    label: &quot;Data Set Two&quot;,
+                    fill: true,
+                    lineTension: 0.3,
+                    backgroundColor: pinkBlue,
+                    borderColor: pinkBlue,
+                    borderCapStyle: &quot;butt&quot;,
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: &quot;miter&quot;,
+                    borderWidth: 1,
+                    pointBorderColor: pinkBlue,
+                    pointBackgroundColor: &quot;#fff&quot;,
+                    pointBorderWidth: 1,
+                    pointHoverRadius: 5,
+                    pointHoverBackgroundColor: &quot;#fff&quot;,
+                    pointHoverBorderColor: window.colors.pink,
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 1,
+                    pointHitRadius: 10,
+                    data: [50, 40, 50, 40, 45, 40, 30],
+                    spanGaps: false,
+                },
+            ],
+        },
+    });</code></pre>
+                    </div>
+                    <div class="my-5">
+                      <canvas id="lineChartCustom1"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card mb-4">
+                  <div class="card-header">
+                    <h4 class="card-heading">
+                      Line chart with primary gradient
+                    </h4>
+                  </div>
+                  <div class="card-body">
+                    <canvas id="lineChartCustom2"></canvas>
+                  </div>
+                </div>
+                <div class="card mb-3">
+                  <div class="card-header">
+                    <h4 class="card-heading">Bar chart</h4>
+                  </div>
+                  <div class="card-body">
+                    <canvas id="barChartExample"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-lg-5">
+                <div class="card mb-4">
+                  <div class="card-header">
+                    <h4 class="card-heading">Donut Chart</h4>
+                  </div>
+                  <div class="card-body">
+                    <p class="show-code-sample text-sm">
+                      <a data-bs-toggle="collapse" href="#codeSample5"
+                        >dounuts</a
+                      >
+                    </p>
+                    <div class="collapse" id="codeSample5">
+                      <pre
+                        class="code-sample"
+                      ><code class="language-js">const donut1 = new Chart(document.getElementById(&quot;donut1&quot;), {
+    type: &quot;doughnut&quot;,
+    options: {
+        cutoutPercentage: 70,
+        legend: {},
+    },
+    data: {
+        labels: [&quot;Tasks Done&quot;, &quot;Remaining&quot;],
+        datasets: [
+            {
+                data: [250, 200],
+                borderWidth: [0, 0],
+                backgroundColor: [window.colors.cyan, &quot;#eee&quot;],
+                hoverBackgroundColor: [window.colors.cyan, &quot;#eee&quot;],
+            },
+        ],
+    },
+});  </code></pre>
+                    </div>
+                    <canvas class="mt-4" id="donut1"></canvas>
                   </div>
                 </div>
                 <div class="card mb-4">
-                  <div class="card-body">
-                    <div class="d-flex align-items-center">
-                      <div class="flex-shrink-0">
-                        <img
-                          class="avatar avatar-lg p-1"
-                          src="img/profile1.png"
-                          alt="Cecilia Clark"
-                        />
-                      </div>
-                      <div class="flex-grow-1 ps-3">
-                        <h4>Cecilia Clark</h4>
-                        <p class="text-muted mb-0">Coder</p>
-                        <ul class="social-links list-inline mb-0 mt-2">
-                          <li class="list-inline-item">
-                            <a
-                              href="javascript:void(0)"
-                              data-bs-toggle="tooltip"
-                              data-placement="top"
-                              title="Nathan's Facebook"
-                              ><i class="fab fa-facebook"></i
-                            ></a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a
-                              href="javascript:void(0)"
-                              data-bs-toggle="tooltip"
-                              data-placement="top"
-                              title="@nathan_andrews"
-                              ><i class="fab fa-twitter"></i
-                            ></a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a
-                              href="javascript:void(0)"
-                              data-bs-toggle="tooltip"
-                              data-placement="top"
-                              title="+420777555987"
-                              ><i class="fa fa-phone"></i
-                            ></a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a
-                              href="javascript:void(0)"
-                              data-bs-toggle="tooltip"
-                              data-placement="top"
-                              title="@nathan"
-                              ><i class="fab fa-skype"></i
-                            ></a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <form class="card mb-4">
                   <div class="card-header">
-                    <h4 class="card-heading">My Profile</h4>
+                    <h4 class="card-heading">Donut Chart 2</h4>
                   </div>
                   <div class="card-body">
-                    <div class="row mb-3">
-                      <div class="col-auto d-flex align-items-center">
-                        <img
-                          class="avatar avatar-lg p-1"
-                          src="img/profile1.png"
-                          alt="Avatar"
-                        />
-                      </div>
-                      <div class="col">
-                        <label class="form-label">Name</label>
-                        <input class="form-control" placeholder="Your name" />
-                      </div>
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Bio</label>
-                      <textarea class="form-control" rows="8">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea
+                    <p class="show-code-sample text-sm">
+                      <a data-bs-toggle="collapse" href="#codeSample6"
+                        >Donut chart 2 - Show code sample</a
                       >
+                    </p>
+                    <div class="collapse" id="codeSample6">
+                      <pre
+                        class="code-sample"
+                      ><code class="language-js">const donut2 = new Chart(document.getElementById(&quot;donut2&quot;), {
+    type: &quot;doughnut&quot;,
+    options: {
+        cutoutPercentage: 90,
+        legend: {
+            display: false,
+        },
+    },
+    data: {
+        labels: [&quot;First&quot;, &quot;Second&quot;],
+        datasets: [
+            {
+                data: [300, 50],
+                borderWidth: [0, 0],
+                backgroundColor: [window.colors.blue, &quot;#eee&quot;],
+                hoverBackgroundColor: [window.colors.blue, &quot;#eee&quot;],
+            },
+        ],
+    },
+});                  </code></pre>
                     </div>
-                    <div class="mb-3">
-                      <label class="form-label">Email</label>
-                      <input
-                        class="form-control"
-                        placeholder="you@domain.com"
-                      />
-                    </div>
-                    <label class="form-label">Password</label>
-                    <input
-                      class="form-control"
-                      type="password"
-                      value="password"
-                    />
-                  </div>
-                  <div class="card-footer text-end">
-                    <button class="btn btn-primary">Save</button>
-                  </div>
-                </form>
-              </div>
-              <div class="col-lg-8">
-                <div class="card overflow-hidden mb-4">
-                  <div class="card-header">
-                    <div class="input-group">
-                      <input
-                        class="form-control"
-                        type="text"
-                        placeholder="Message"
-                      />
-                      <button class="btn btn-outline-secondary" type="button">
-                        <i class="fa fa-paper-plane"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="list-group rounded-0">
-                    <div
-                      class="
-                        list-group-item
-                        border-start-0 border-end-0
-                        py-5
-                        border-top-0
-                      "
-                    >
-                      <div class="d-flex">
-                        <div class="flex-shrink-0">
-                          <img
-                            class="avatar avatar-lg p-1"
-                            src="img/profile1.png"
-                            alt="Cecilia Clark"
-                          />
-                        </div>
-                        <div class="flex-grow-1 ps-3">
-                          <small class="float-right">10 mins ago</small>
-                          <h5 class="fw-bold">Cecilia Clark</h5>
-                          <div class="text-muted text-sm">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                          </div>
-                          <div class="d-flex mt-4">
-                            <div class="flex-shrink-0">
-                              <img
-                                class="avatar avatar-md p-1"
-                                src="img/avatar-3.jpg"
-                                alt="Serenity Mitchelle"
-                              />
-                            </div>
-                            <div class="flex-grow-1 ps-3 text-sm text-muted">
-                              <strong class="text-dark"
-                                >Serenity Mitchelle: </strong
-                              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </div>
-                          </div>
-                          <div class="d-flex mt-4">
-                            <div class="flex-shrink-0">
-                              <img
-                                class="avatar avatar-md p-1"
-                                src="img/avatar-10.jpg"
-                                alt="Tony O'Brian"
-                              />
-                            </div>
-                            <div class="flex-grow-1 ps-3 text-sm text-muted">
-                              <strong class="text-dark">Tony O'Brian: </strong
-                              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="list-group-item border-start-0 border-end-0 py-5"
-                    >
-                      <div class="d-flex">
-                        <div class="flex-shrink-0">
-                          <img
-                            class="avatar avatar-lg p-1"
-                            src="img/profile1.png"
-                            alt="Cecilia Clark"
-                          />
-                        </div>
-                        <div class="flex-grow-1 ps-3">
-                          <small class="float-right">12 mins ago</small>
-                          <h5 class="fw-bold">Cecilia Clark</h5>
-                          <div class="text-muted text-sm">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="list-group-item border-start-0 border-end-0 py-5"
-                    >
-                      <div class="d-flex">
-                        <div class="flex-shrink-0">
-                          <img
-                            class="avatar avatar-lg p-1"
-                            src="img/profile1.png"
-                            alt="Cecilia Clark"
-                          />
-                        </div>
-                        <div class="flex-grow-1 ps-3">
-                          <small class="float-right">34 mins ago</small>
-                          <h5 class="fw-bold">Cecilia Clark</h5>
-                          <div class="text-muted text-sm">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                          </div>
-                          <div class="d-flex mt-4">
-                            <div class="flex-shrink-0">
-                              <img
-                                class="avatar avatar-md p-1"
-                                src="img/avatar-6.jpg"
-                                alt="Javier Gregory"
-                              />
-                            </div>
-                            <div class="flex-grow-1 ps-3 text-sm text-muted">
-                              <strong class="text-dark">Javier Gregory: </strong
-                              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <canvas class="mt-4" id="donut2"></canvas>
                   </div>
                 </div>
-                <form class="card mb-4">
+              </div>
+              <div class="col-lg-7">
+                <div class="card">
                   <div class="card-header">
-                    <h4 class="card-heading">Edit Profile</h4>
+                    <h4 class="card-heading">Bar chart 2</h4>
                   </div>
                   <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-5">
-                        <div class="mb-4">
-                          <label class="form-label">Company</label>
-                          <input
-                            class="form-control"
-                            type="text"
-                            placeholder="Company"
-                            value="Nathan &amp; Nathan"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-3">
-                        <div class="mb-4">
-                          <label class="form-label">Username</label>
-                          <input
-                            class="form-control"
-                            type="text"
-                            placeholder="Username"
-                            value="nathan"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4">
-                        <div class="mb-4">
-                          <label class="form-label">Email address</label>
-                          <input
-                            class="form-control"
-                            type="email"
-                            placeholder="Email"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-6">
-                        <div class="mb-4">
-                          <label class="form-label">First Name</label>
-                          <input
-                            class="form-control"
-                            type="text"
-                            placeholder="First name"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-6">
-                        <div class="mb-4">
-                          <label class="form-label">Last Name</label>
-                          <input
-                            class="form-control"
-                            type="text"
-                            placeholder="Last Name"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="mb-4">
-                          <label class="form-label">Address</label>
-                          <input
-                            class="form-control"
-                            type="text"
-                            placeholder="Home Address"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4">
-                        <div class="mb-4">
-                          <label class="form-label">City</label>
-                          <input
-                            class="form-control"
-                            type="text"
-                            placeholder="City"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-3">
-                        <div class="mb-4">
-                          <label class="form-label">ZIP</label>
-                          <input
-                            class="form-control"
-                            type="number"
-                            placeholder="ZIP"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-5">
-                        <div class="mb-4">
-                          <label class="form-label">Country</label>
-                          <select class="form-control custom-select">
-                            <option value="">UK</option>
-                            <option value="">US</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="mb-0">
-                          <label class="form-label">About Me</label>
-                          <textarea
-                            class="form-control"
-                            rows="5"
-                            placeholder="Here can be your description"
-                          >
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea
-                          >
-                        </div>
-                      </div>
+                    <p class="text-gray-500 text-sm">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                    </p>
+                    <p class="show-code-sample text-sm">
+                      <a data-bs-toggle="collapse" href="#codeSample2"
+                        >barchart</a
+                      >
+                    </p>
+                    <div class="collapse" id="codeSample2">
+                      <pre
+                        class="code-sample"
+                      ><code class="language-js">const barChart2 = new Chart(document.getElementById(&quot;barChart2&quot;), {
+    type: &quot;bar&quot;,
+    options: {
+        scales: {
+            xAxes: [
+                {
+                    display: true,
+                    gridLines: {
+                        color: &quot;#fff&quot;,
+                    },
+                },
+            ],
+            yAxes: [
+                {
+                    display: true,
+                    ticks: {
+                        max: 100,
+                        min: 20,
+                    },
+                    gridLines: {
+                        color: &quot;#fff&quot;,
+                    },
+                },
+            ],
+        },
+        legend: false,
+    },
+    data: {
+        labels: [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot;10&quot;, &quot;11&quot;, &quot;12&quot;, &quot;13&quot;, &quot;14&quot;],
+        datasets: [
+            {
+                label: &quot;Sunny Days&quot;,
+                backgroundColor: pinkBlue,
+                hoverBackgroundColor: pinkBlue,
+                borderColor: pinkBlue,
+                borderWidth: 0,
+                data: [65, 59, 80, 81, 56, 55, 40, 30, 45, 80, 44, 36, 66, 58],
+            },
+        ],
+    },
+});                           </code></pre>
                     </div>
+                    <canvas class="mt-5" id="barChart2"></canvas>
                   </div>
-                  <div class="card-footer text-end">
-                    <button class="btn btn-primary" type="submit">
-                      Update Profile
-                    </button>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card mb-4">
+                  <div class="card-header">
+                    <h4 class="card-heading">Donut chart Example</h4>
                   </div>
-                </form>
+                  <div class="card-body">
+                    <p class="show-code-sample text-sm">
+                      <a data-bs-toggle="collapse" href="#codeSample3"
+                        >more dounuts</a
+                      >
+                    </p>
+                    <div class="collapse" id="codeSample3">
+                      <pre
+                        class="code-sample"
+                      ><code class="language-js">const donut3 = new Chart(document.getElementById(&quot;donut3&quot;), {
+    type: &quot;doughnut&quot;,
+    options: {
+        cutoutPercentage: 70,
+    },
+    data: {
+        labels: [&quot;Sandra&quot;, &quot;Becky&quot;, &quot;Julie&quot;, &quot;Romero&quot;],
+        datasets: [
+            {
+                data: [250, 50, 100, 40],
+
+                backgroundColor: [&quot;#0d6efd&quot;, &quot;#3d8bfd&quot;, &quot;#6ea8fe&quot;, &quot;#9ec5fe&quot;],
+                hoverBackgroundColor: [&quot;#0d6efd&quot;, &quot;#3d8bfd&quot;, &quot;#6ea8fe&quot;, &quot;#9ec5fe&quot;],
+            },
+        ],
+    },
+});                                
+</code></pre>
+                    </div>
+                    <canvas class="mt-4" id="donut3"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card mb-4">
+                  <div class="card-header">
+                    <h4 class="card-heading">Pie chart Example</h4>
+                  </div>
+                  <div class="card-body">
+                    <p class="show-code-sample text-sm">
+                      <a data-bs-toggle="collapse" href="#codeSample4"
+                        >even more dounuts</a
+                      >
+                    </p>
+                    <div class="collapse" id="codeSample4">
+                      <pre
+                        class="code-sample"
+                      ><code class="language-js">const pieChartCustom3 = new Chart(document.getElementById(&quot;pieChartCustom3&quot;), {
+    type: &quot;pie&quot;,
+    data: {
+        labels: [&quot;John&quot;, &quot;Mark&quot;, &quot;Frank&quot;, &quot;Danny&quot;],
+        datasets: [
+            {
+                data: [300, 50, 100, 80],
+                backgroundColor: [&quot;#6610f2&quot;, &quot;#8540f5&quot;, &quot;#a370f7&quot;, &quot;#c29ffa&quot;],
+                hoverBackgroundColor: [&quot;#6610f2&quot;, &quot;#8540f5&quot;, &quot;#a370f7&quot;, &quot;#c29ffa&quot;],
+            },
+        ],
+    },
+});                                    
+</code></pre>
+                    </div>
+                    <canvas class="mt-4" id="pieChartCustom3"></canvas>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -976,7 +938,7 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-6 text-center text-md-start fw-bold">
-                <p class="mb-2 mb-md-0 fw-bold">Creators Corner; 2021</p>
+                <p class="mb-2 mb-md-0 fw-bold">Creators Corner &copy; 2021</p>
               </div>
               <div class="col-md-6 text-center text-md-end text-gray-400">
                 <p class="mb-0">Version 1.1.0</p>
@@ -989,13 +951,17 @@
     <!-- JavaScript files-->
     <script src="profile/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <!-- Init Charts on Charts page-->
+    <script src="profile/Chart.min.js"></script>
+    <script src="profile/charts-defaults.js"></script>
+    <script src="profile/charts-custom.js"></script>
     <!-- Main Theme JS File-->
     <script src="profile/theme.js"></script>
     <!-- Prism for syntax highlighting-->
-    <script src="vendor/prismjs/prism.js"></script>
-    <script src="vendor/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
-    <script src="vendor/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
-    <script src="vendor/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <script src="profile/prism.js"></script>
+    <script src="profile/prism-normalize-whitespace.min.js"></script>
+    <script src="profile/prism-toolbar.min.js"></script>
+    <script src="profile/prism-copy-to-clipboard.min.js"></script>
     <script type="text/javascript">
       // Optional
       Prism.plugins.NormalizeWhitespace.setDefaults({

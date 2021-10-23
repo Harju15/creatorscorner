@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Profile</title>
+    <title>Sparklines</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="all,follow" />
@@ -14,11 +14,8 @@
       rel="stylesheet"
     />
     <!-- Prism Syntax Highlighting-->
-    <link
-      rel="stylesheet"
-      href="vendor/prismjs/plugins/toolbar/prism-toolbar.css"
-    />
-    <link rel="stylesheet" href="vendor/prismjs/themes/prism-okaidia.css" />
+    <link rel="stylesheet" href="charts/prism-toolbar.css" />
+    <link rel="stylesheet" href="charts/prism-okaidia.css" />
     <!-- The Main Theme stylesheet (Contains also Bootstrap CSS)-->
     <link
       rel="stylesheet"
@@ -38,7 +35,7 @@
           ><i class="fas fa-align-left"></i></a
         ><a
           class="navbar-brand fw-bold text-uppercase text-base"
-          href="index1.html"
+          href="index.html"
           ><span class="d-none d-brand-partial">Creators </span
           ><span class="d-none d-sm-inline">Corner</span></a
         >
@@ -82,7 +79,7 @@
               ><a class="dropdown-item py-1" href="index1.html">
                 <img
                   class="avatar avatar-xs p-1 me-2"
-                  src="img/avatar-10.jpg"
+                  src="img/avatar-1.jpg"
                   alt="Frank Williams"
                 /><span>Frank Williams</span></a
               ><a class="dropdown-item py-1" href="index1.html">
@@ -116,7 +113,9 @@
               aria-expanded="false"
             >
               <svg class="svg-icon svg-icon-md svg-icon-heavy">
-                <use xlink:href="orion-svg-sprite.svg#sales-up-1"></use></svg
+                <use
+                  xlink:href="icons/orion-svg-sprite.svg#sales-up-1"
+                ></use></svg
               ><span class="notification-badge bg-green"></span
             ></a>
             <div
@@ -183,7 +182,7 @@
             >
               <svg class="svg-icon svg-icon-md svg-icon-heavy">
                 <use
-                  xlink:href="orion-svg-sprite.svg#paper-plane-1"
+                  xlink:href="icons/orion-svg-sprite.svg#paper-plane-1"
                 ></use></svg
               ><span
                 class="notification-badge notification-badge-number bg-primary"
@@ -200,7 +199,7 @@
               <a class="dropdown-item d-flex align-items-center p-3" href="#">
                 <img
                   class="avatar avatar-sm p-1 me-2"
-                  src="img/avatar-10.jpg"
+                  src="img/avatar-0.jpg"
                   alt="Jason Doe"
                 />
                 <div class="pt-1">
@@ -210,7 +209,7 @@
               ><a class="dropdown-item d-flex align-items-center p-3" href="#">
                 <img
                   class="avatar avatar-sm p-1 me-2"
-                  src="img/avatar-10.jpg"
+                  src="img/avatar-1.jpg"
                   alt="Frank Williams"
                 />
                 <div class="pt-1">
@@ -244,7 +243,7 @@
               data-bs-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-              ><img class="avatar p-1" src="img/profile1.png" alt="Jason Doe"
+              ><img class="avatar p-1" src="img/avatar-6.jpg" alt="Jason Doe"
             /></a>
             <div
               class="dropdown-menu dropdown-menu-end dropdown-menu-animated"
@@ -258,7 +257,7 @@
               <a class="dropdown-item" href="#">Settings</a
               ><a class="dropdown-item" href="#">Activity log </a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="index.html">Logout</a>
+              <a class="dropdown-item" href="login.html">Logout</a>
             </div>
           </li>
         </ul>
@@ -269,7 +268,7 @@
         <h6 class="sidebar-heading">Main</h6>
         <ul class="list-unstyled">
           <li class="sidebar-list-item">
-            <a class="sidebar-link text-muted" href="twitter.html">
+            <a class="sidebar-link text-muted" href="index.html">
               <svg class="svg-icon svg-icon-md me-3">
                 <use
                   xlink:href="orion-svg-sprite.svg#real-estate-1"
@@ -413,7 +412,7 @@
               ><span class="sidebar-link-title">Pages </span></a
             >
             <ul
-              class="sidebar-menu list-unstyled collapse show"
+              class="sidebar-menu list-unstyled collapse"
               id="pagesDropdown"
             >
             <li class="sidebar-list-item">
@@ -462,10 +461,12 @@
                 >
               </li>
               
+              
+              
               <li class="sidebar-list-item">
                 <a
                   class="sidebar-link text-muted"
-                  href="post-list.html"
+                  href="pages-knowledge-base-topic.html"
                   >Forum - Topics</a
                 >
               </li>
@@ -552,7 +553,7 @@
             >
             <ul class="sidebar-menu list-unstyled collapse" id="formsDropdown">
               <li class="sidebar-list-item">
-                <a class="sidebar-link text-muted" href="Calendar.html"
+                <a class="sidebar-link text-muted" href="calendar.html"
                   >Calendar</a
                 >
               </li>
@@ -598,374 +599,213 @@
           </div>
           <!-- Page Header-->
           <div class="page-header">
-            <h1 class="page-heading">Profile</h1>
+            <h1 class="page-heading">Socials Analytics</h1>
           </div>
           <section>
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="card card-profile mb-4">
-                  <div
-                    class="card-header"
-                    style="background-image: url(img/cherry.jpg)"
-                  ></div>
-                  <div class="card-body text-center">
-                    <img
-                      class="card-profile-img"
-                      src="img/profile1.png"
-                      alt="Cecilia Clark"
-                    />
-                    <h3 class="mb-3">Cecilia Clark</h3>
-                    <p class="mb-4">
-                      Lorem ipsum dolor sit amet, consectetur 
-                    </p>
-                    <button class="btn btn-outline-dark btn-sm">
-                      <span class="fab fa-twitter"></span> Follow
-                    </button>
-                    <button class="btn btn-outline-dark btn-sm">
-                      <span class="hire me"></span> Hire Me
-                    </button>
-                    <button class="btn btn-outline-dark btn-sm">
-                      <span class="fab fa-instagram"></span> Follow
-                    </button>
-                  </div>
+            <div class="card mb-4">
+              <div class="card-header">
+                <h4 class="card-heading">Activity Guages</h4>
+              </div>
+              <div class="card-body">
+                <p>
+                  These gauge graphs show overall engagement in a broad view for each of your socials. the higher the guage the more engagement you are getting on that platform.
+                  
+                </p>
+                <h3 class="socials">Twitter</h3>
+                <h3 class="socials">Instagram</h3>
+                <h3 class="socials">Facebook</h3>
+                <h3 class="socials">Tik-Tok</h3>
+                <div class="collapse" id="codeSample1">
+                  <pre
+                    class="code-sample"
+                  ><code class="language-js">const gauge1 = document.getElementById(&quot;gauge1&quot;);
+
+const opts = {
+    angle: 0, // The span of the gauge arc
+    lineWidth: 0.06, // The line thickness
+    radiusScale: 1, // Relative radius
+    pointer: {
+        length: 0.6, // // Relative to gauge radius
+        strokeWidth: 0.035, // The thickness
+        color: &quot;#fff&quot;, // Fill color
+    },
+    fontSize: 20,
+    limitMax: false, // If false, max value increases automatically if value &gt; maxValue
+    limitMin: false, // If true, the min value of the gauge will be fixed
+    colorStart: &quot;#6F6EA0&quot;, // Colors
+    colorStop: &quot;#C0C0DB&quot;, // just experiment with them
+    strokeColor: &quot;#eee&quot;, // to see which ones work best for you
+    generateGradient: false,
+    scaleOverride: true,
+    highDpiSupport: true, // High resolution support
+};
+
+opts.colorStop = &quot;#864DD9&quot;;
+const gaugeObject1 = new Donut(gauge1).setOptions(opts); // create sexy gauge!
+
+gaugeObject1.maxValue = 3000; // set max gauge value
+gaugeObject1.setMinValue(0); // set min value
+gaugeObject1.set(Math.floor(Math.random() * 3000)); // set actual value
+gaugeObject1.setTextField(document.getElementById(&quot;gauge1Value&quot;));                            
+</code></pre>
                 </div>
-                <div class="card mb-4">
-                  <div class="card-body">
-                    <div class="d-flex align-items-center">
-                      <div class="flex-shrink-0">
-                        <img
-                          class="avatar avatar-lg p-1"
-                          src="img/profile1.png"
-                          alt="Cecilia Clark"
-                        />
-                      </div>
-                      <div class="flex-grow-1 ps-3">
-                        <h4>Cecilia Clark</h4>
-                        <p class="text-muted mb-0">Coder</p>
-                        <ul class="social-links list-inline mb-0 mt-2">
-                          <li class="list-inline-item">
-                            <a
-                              href="javascript:void(0)"
-                              data-bs-toggle="tooltip"
-                              data-placement="top"
-                              title="Nathan's Facebook"
-                              ><i class="fab fa-facebook"></i
-                            ></a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a
-                              href="javascript:void(0)"
-                              data-bs-toggle="tooltip"
-                              data-placement="top"
-                              title="@nathan_andrews"
-                              ><i class="fab fa-twitter"></i
-                            ></a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a
-                              href="javascript:void(0)"
-                              data-bs-toggle="tooltip"
-                              data-placement="top"
-                              title="+420777555987"
-                              ><i class="fa fa-phone"></i
-                            ></a>
-                          </li>
-                          <li class="list-inline-item">
-                            <a
-                              href="javascript:void(0)"
-                              data-bs-toggle="tooltip"
-                              data-placement="top"
-                              title="@nathan"
-                              ><i class="fab fa-skype"></i
-                            ></a>
-                          </li>
-                        </ul>
-                      </div>
+                <div class="row mt-5">
+                  <div class="col-md-3">
+                    <div class="gauge-container">
+                      <canvas class="gauge-canvas" id="gauge1"></canvas
+                      ><span class="gauge-label" id="gauge1Value"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="gauge-container">
+                      <canvas class="gauge-canvas" id="gauge2"></canvas
+                      ><span class="gauge-label" id="gauge2Value"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="gauge-container">
+                      <canvas class="gauge-canvas" id="gauge3"></canvas
+                      ><span class="gauge-label" id="gauge3Value"></span>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="gauge-container">
+                      <canvas class="gauge-canvas" id="gauge4"></canvas
+                      ><span class="gauge-label" id="gauge4Value"></span>
                     </div>
                   </div>
                 </div>
-                <form class="card mb-4">
-                  <div class="card-header">
-                    <h4 class="card-heading">My Profile</h4>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="card-header">
+                <h4 class="card-heading">Activity Sparkline</h4>
+              </div>
+              <div class="card-body">
+                <p>
+                  A very simple Sparkline graph that shows crude spikes for your engagement.
+                </p>
+                <p class="show-code-sample">
+                  
+                </p>
+                <div class="collapse" id="codeSample2">
+                  <pre class="code-sample"><code class="language-html">
+                          &lt;svg class=&quot;sparkline sparkline--red&quot; width=&quot;100&quot; height=&quot;30&quot; stroke-width=&quot;3&quot;&gt;&lt;/svg&gt;
+                          &lt;svg class=&quot;sparkline sparkline--red sparkline--filled&quot; width=&quot;100&quot; height=&quot;30&quot; stroke-width=&quot;3&quot;&gt;&lt;/svg&gt;
+                          &lt;script&gt;sparkline(document.querySelector(&quot;.sparkline&quot;), [1, 5, 2, 4, 8, 3, 7]);&lt;/script&gt;</code></pre>
+                </div>
+                <div class="row mt-5">
+                  <div class="col-lg-6 col-xl-4 mb-5">
+                    <div class="d-flex align-items-center mb-4">
+                      <div class="position-relative flex-shrink-0">
+                        <svg
+                          class="btc"
+                          width="100"
+                          height="20"
+                          stroke-width="2"
+                          stroke="blue"
+                          fill="rgba(0, 0, 255, .2)"
+                        ></svg
+                        ><span class="sparkline--tooltip" hidden></span>
+                      </div>
+                      <div class="ms-3">
+                        <p class="fw-bold mb-0">Likes</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <div class="position-relative flex-shrink-0">
+                        <svg
+                          class="eth"
+                          width="100"
+                          height="20"
+                          stroke-width="2"
+                          stroke="blue"
+                          fill="rgba(0, 0, 255, .2)"
+                        ></svg
+                        ><span class="sparkline--tooltip" hidden></span>
+                      </div>
+                      <div class="ms-3">
+                        <p class="fw-bold mb-0">Comments</p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="card-body">
-                    <div class="row mb-3">
-                      <div class="col-auto d-flex align-items-center">
-                        <img
-                          class="avatar avatar-lg p-1"
-                          src="img/profile1.png"
-                          alt="Avatar"
-                        />
+                  <div class="col-lg-6">
+                    <div class="row row-cols-2 row-cols-md-4 row-cols-lg-3">
+                      <div class="col mb-3">
+                        
+                        <svg
+                          class="sparkline sparkline--red sparkline--filled"
+                          width="100"
+                          height="30"
+                          stroke-width="3"
+                        ></svg>
+                      </div>
+                      <div class="col mb-3">
+                        
+                        <svg
+                          class="sparkline sparkline--blue sparkline--filled"
+                          width="100"
+                          height="30"
+                          stroke-width="3"
+                        ></svg>
+                      </div>
+                      <div class="col mb-3">
+                        
+                        <svg
+                          class="sparkline sparkline--green sparkline--filled"
+                          width="100"
+                          height="30"
+                          stroke-width="3"
+                        ></svg>
+                      </div>
+                      <div class="col mb-3">
+                        
+                        <svg
+                          class="sparkline sparkline--gray sparkline--filled"
+                          width="100"
+                          height="30"
+                          stroke-width="3"
+                        ></svg>
+                      </div>
+                      <div class="col mb-3">
+                        
+                        <svg
+                          class="sparkline sparkline--orange sparkline--filled"
+                          width="100"
+                          height="30"
+                          stroke-width="3"
+                        ></svg>
                       </div>
                       <div class="col">
-                        <label class="form-label">Name</label>
-                        <input class="form-control" placeholder="Your name" />
+                       
+                        <svg
+                          class="sparkline sparkline--purple sparkline--filled"
+                          width="100"
+                          height="30"
+                          stroke-width="3"
+                        ></svg>
                       </div>
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Bio</label>
-                      <textarea class="form-control" rows="8">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea
-                      >
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label">Email</label>
-                      <input
-                        class="form-control"
-                        placeholder="you@domain.com"
-                      />
-                    </div>
-                    <label class="form-label">Password</label>
-                    <input
-                      class="form-control"
-                      type="password"
-                      value="password"
-                    />
-                  </div>
-                  <div class="card-footer text-end">
-                    <button class="btn btn-primary">Save</button>
-                  </div>
-                </form>
-              </div>
-              <div class="col-lg-8">
-                <div class="card overflow-hidden mb-4">
-                  <div class="card-header">
-                    <div class="input-group">
-                      <input
-                        class="form-control"
-                        type="text"
-                        placeholder="Message"
-                      />
-                      <button class="btn btn-outline-secondary" type="button">
-                        <i class="fa fa-paper-plane"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <div class="list-group rounded-0">
-                    <div
-                      class="
-                        list-group-item
-                        border-start-0 border-end-0
-                        py-5
-                        border-top-0
-                      "
-                    >
-                      <div class="d-flex">
-                        <div class="flex-shrink-0">
-                          <img
-                            class="avatar avatar-lg p-1"
-                            src="img/profile1.png"
-                            alt="Cecilia Clark"
-                          />
-                        </div>
-                        <div class="flex-grow-1 ps-3">
-                          <small class="float-right">10 mins ago</small>
-                          <h5 class="fw-bold">Cecilia Clark</h5>
-                          <div class="text-muted text-sm">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                          </div>
-                          <div class="d-flex mt-4">
-                            <div class="flex-shrink-0">
-                              <img
-                                class="avatar avatar-md p-1"
-                                src="img/avatar-3.jpg"
-                                alt="Serenity Mitchelle"
-                              />
-                            </div>
-                            <div class="flex-grow-1 ps-3 text-sm text-muted">
-                              <strong class="text-dark"
-                                >Serenity Mitchelle: </strong
-                              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </div>
-                          </div>
-                          <div class="d-flex mt-4">
-                            <div class="flex-shrink-0">
-                              <img
-                                class="avatar avatar-md p-1"
-                                src="img/avatar-10.jpg"
-                                alt="Tony O'Brian"
-                              />
-                            </div>
-                            <div class="flex-grow-1 ps-3 text-sm text-muted">
-                              <strong class="text-dark">Tony O'Brian: </strong
-                              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </div>
-                          </div>
-                        </div>
+                      <div class="col mb-3">
+                        
+                        <svg
+                          class="sparkline sparkline--yellow sparkline--filled"
+                          width="100"
+                          height="30"
+                          stroke-width="3"
+                        ></svg>
                       </div>
-                    </div>
-                    <div
-                      class="list-group-item border-start-0 border-end-0 py-5"
-                    >
-                      <div class="d-flex">
-                        <div class="flex-shrink-0">
-                          <img
-                            class="avatar avatar-lg p-1"
-                            src="img/profile1.png"
-                            alt="Cecilia Clark"
-                          />
-                        </div>
-                        <div class="flex-grow-1 ps-3">
-                          <small class="float-right">12 mins ago</small>
-                          <h5 class="fw-bold">Cecilia Clark</h5>
-                          <div class="text-muted text-sm">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="list-group-item border-start-0 border-end-0 py-5"
-                    >
-                      <div class="d-flex">
-                        <div class="flex-shrink-0">
-                          <img
-                            class="avatar avatar-lg p-1"
-                            src="img/profile1.png"
-                            alt="Cecilia Clark"
-                          />
-                        </div>
-                        <div class="flex-grow-1 ps-3">
-                          <small class="float-right">34 mins ago</small>
-                          <h5 class="fw-bold">Cecilia Clark</h5>
-                          <div class="text-muted text-sm">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                          </div>
-                          <div class="d-flex mt-4">
-                            <div class="flex-shrink-0">
-                              <img
-                                class="avatar avatar-md p-1"
-                                src="img/avatar-6.jpg"
-                                alt="Javier Gregory"
-                              />
-                            </div>
-                            <div class="flex-grow-1 ps-3 text-sm text-muted">
-                              <strong class="text-dark">Javier Gregory: </strong
-                              >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </div>
-                          </div>
-                        </div>
+                      <div class="col mb-3">
+                       
+                        <svg
+                          class="sparkline sparkline--pink sparkline--filled"
+                          width="100"
+                          height="30"
+                          stroke-width="3"
+                        ></svg>
                       </div>
                     </div>
                   </div>
                 </div>
-                <form class="card mb-4">
-                  <div class="card-header">
-                    <h4 class="card-heading">Edit Profile</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-md-5">
-                        <div class="mb-4">
-                          <label class="form-label">Company</label>
-                          <input
-                            class="form-control"
-                            type="text"
-                            placeholder="Company"
-                            value="Nathan &amp; Nathan"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-3">
-                        <div class="mb-4">
-                          <label class="form-label">Username</label>
-                          <input
-                            class="form-control"
-                            type="text"
-                            placeholder="Username"
-                            value="nathan"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4">
-                        <div class="mb-4">
-                          <label class="form-label">Email address</label>
-                          <input
-                            class="form-control"
-                            type="email"
-                            placeholder="Email"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-6">
-                        <div class="mb-4">
-                          <label class="form-label">First Name</label>
-                          <input
-                            class="form-control"
-                            type="text"
-                            placeholder="First name"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-6">
-                        <div class="mb-4">
-                          <label class="form-label">Last Name</label>
-                          <input
-                            class="form-control"
-                            type="text"
-                            placeholder="Last Name"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="mb-4">
-                          <label class="form-label">Address</label>
-                          <input
-                            class="form-control"
-                            type="text"
-                            placeholder="Home Address"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4">
-                        <div class="mb-4">
-                          <label class="form-label">City</label>
-                          <input
-                            class="form-control"
-                            type="text"
-                            placeholder="City"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-3">
-                        <div class="mb-4">
-                          <label class="form-label">ZIP</label>
-                          <input
-                            class="form-control"
-                            type="number"
-                            placeholder="ZIP"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-5">
-                        <div class="mb-4">
-                          <label class="form-label">Country</label>
-                          <select class="form-control custom-select">
-                            <option value="">UK</option>
-                            <option value="">US</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="mb-0">
-                          <label class="form-label">About Me</label>
-                          <textarea
-                            class="form-control"
-                            rows="5"
-                            placeholder="Here can be your description"
-                          >
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</textarea
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-footer text-end">
-                    <button class="btn btn-primary" type="submit">
-                      Update Profile
-                    </button>
-                  </div>
-                </form>
               </div>
             </div>
           </section>
@@ -989,13 +829,21 @@
     <!-- JavaScript files-->
     <script src="profile/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <!-- Gauge.js-->
+    <script src="profile/gauge.min.js"></script>
+    <!-- Sparkline-->
+    <script src="profile/sparkline.js"></script>
+    <!-- Init Gauge-->
+    <script src="profile/charts-gauge.js"></script>
+    <!-- Init Sparkline-->
+    <script src="profile/charts-sparkline.js"></script>
     <!-- Main Theme JS File-->
     <script src="profile/theme.js"></script>
     <!-- Prism for syntax highlighting-->
-    <script src="vendor/prismjs/prism.js"></script>
-    <script src="vendor/prismjs/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
-    <script src="vendor/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
-    <script src="vendor/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+    <script src="profile/prism.js"></script>
+    <script src="profile/prism-normalize-whitespace.min.js"></script>
+    <script src="profile/prism-toolbar.min.js"></script>
+    <script src="profile/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
     <script type="text/javascript">
       // Optional
       Prism.plugins.NormalizeWhitespace.setDefaults({
